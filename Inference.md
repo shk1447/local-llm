@@ -139,6 +139,8 @@ const response = context.prompt("대한민국의 수도는?", { maxTokens: 100 }
 | 🧠 LLM 모델       | Gemma-3B Instruction 튜닝 (.gguf) | [다운로드](http://storage.vases.app/gemma-3-1B-it-QAT-Q4_0.gguf) |
 | 🔎 Embedding 모델 | BGE-M3 q8_0 (.gguf)               | [다운로드](http://storage.vases.app/bge-m3-q8_0.gguf)            |
 
+> nomic이 https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe-GGUF
+
 ---
 
 > 💡 학습은 Python + Transformers,  

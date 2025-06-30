@@ -2,18 +2,20 @@
   "name": "local-llm",
   "version": "1.0.0",
   "description": "",
+  "main": "index.ts",
   "type": "module",
-  "main": "index.js",
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node --loader ts-node/esm index.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@huggingface/transformers": "^3.6.0",
-    "node-llama-cpp": "^3.10.0"
+    "node-llama-cpp": "^3.10.0",
+    "vectra": "^0.11.1"
   },
   "devDependencies": {
+    "@types/node": "^24.0.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
