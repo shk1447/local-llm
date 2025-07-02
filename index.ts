@@ -22,14 +22,6 @@ const main = async () => {
 
   const llama = await getLlama();
 
-  const model = await llama.loadModel({
-    modelPath: path.join(
-      __dirname,
-      "./models/nomic-embed-text-v2-moe.Q4_K_M.gguf"
-    ),
-    useMlock: true,
-  });
-
   const llmModel = await llama.loadModel({
     modelPath: path.join(__dirname, "./models/gemma-3-1B-it-QAT-Q4_0.gguf"),
     gpuLayers: "auto",
