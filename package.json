@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node --loader ts-node/esm index.ts",
-    "docs": "node --loader ts-node/esm docs.ts"
+    "docs": "node --loader ts-node/esm docs.ts",
+    "call": "node --loader ts-node/esm call.ts"
   },
   "author": "",
   "license": "ISC",
